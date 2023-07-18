@@ -12,7 +12,7 @@ int main(void)
 
 	for(int i=1; i<=98; i++)
 	{
-		printf("%d, ",sum)
+		printf("%d, ",sum);
 		sum += i++;
 
 	}
