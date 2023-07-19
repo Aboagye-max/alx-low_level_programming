@@ -1,12 +1,11 @@
-#include "main.h";
+#include "unistd.h";
 /**
  *main - check the code
  *
  * Return: Always 0
  */
 
-int main(void)
+int _putchar(char c)
 {
-	write(1,"_putchar\n",10);
-	return (0);
+	return (write(1,&c,1));
 }
