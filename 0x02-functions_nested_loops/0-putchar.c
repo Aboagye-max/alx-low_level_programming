@@ -1,11 +1,12 @@
 #include "unistd.h";
 /**
- *main - check the code
+ *_putchar takes in a char anr returns an integer variable
  *
- * Return: Always 0
+ * Return: Always the zero ( success )
  */
 
-char _putchar(char c)
+int _putchar(char c)
 {
-	return (write(1,&c,1));
+	write(1,&c,1)
+	return (0);
 }
