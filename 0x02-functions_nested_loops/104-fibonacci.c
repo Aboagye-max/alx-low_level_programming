@@ -8,13 +8,22 @@
  */
 int main(void)
 {
-	int sum = 1;
+	int sum = 0, a = 1, b = 2;
 
 	for(int i=1; i<=98; i++)
 	{
-		printf("%d, ",sum)
-		sum += i++;
-
+		if( i== 1 )
+		{
+			printf("%d, ",a);
+		}
+		if( i== 2 )
+		{
+			printf("%d, ",b);
+		}
+		sum = a+b;
+		a=b;
+		b=sum;
+		printf("%d, ",sum);
 	}
 	printf("\n");
 	return (0);
