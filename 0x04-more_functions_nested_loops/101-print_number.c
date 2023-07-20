@@ -8,7 +8,6 @@
   */
 void print_number(int n)
 {
-	int number ;
 	if( n % 2 == 0 )
 	{
 		_putchar(n);
