@@ -11,9 +11,10 @@
 void generatePassword(int len) {
    char possibleChars[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()";
    char password[len+1];
+   int i;
    
    srand(time(0)); 
-   for(int i = 0; i < len; i++) {
+   for(i = 0; i < len; i++) {
       int randomIndex = rand() % (sizeof(possibleChars) - 1);
       password[i] = possibleChars[randomIndex];
    }
