@@ -2,13 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-/**
-  * 101-keygen - generates random valid passwords for the program
-  * @int: The int to be treated
-  *
-  * Return: 0( sucess )
-  */
-
 void generatePassword(int len) {
    char possibleChars[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()";
    char password[len+1];
