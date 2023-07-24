@@ -10,7 +10,7 @@
   */
 void generatePassword(int len) {
    char possibleChars[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()";
-   char password[len];
+   char password[len+1];
    int i;
    
    srand(time(0)); 
