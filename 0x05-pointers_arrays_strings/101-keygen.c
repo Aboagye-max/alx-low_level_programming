@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
-  * 101-keygen - Pgenerates random valid passwords for the program
+  * 101-keygen - generates random valid passwords for the program
   * @int: The int to be treated
   *
   * Return: 0( sucess )
