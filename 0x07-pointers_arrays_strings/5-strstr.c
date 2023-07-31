@@ -30,13 +30,4 @@ char *_strstr(char *haystack, char *needle)
 			return (haystack);
 	}
 	return (NULL);
-}										if (haystack[i] != needle[i])
-																						break;
-																			}
-												if (i != s)
-																haystack++;
-														else
-																		return (haystack);
-															}
-						return (NULL);
-}
+}										
