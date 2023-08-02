@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *  * helper - Finds the square root of two numbers
+ *  * getRoot - Finds the square root of two numbers
  *   *
  *    * @a: The number
  *     * @b: The number to test for the square root of @a
@@ -9,7 +9,7 @@
  *       * Return: square root
  *        */
 
-int get(int a, int b)
+int getRoot(int a, int b)
 {
 	if (b * b > a)
 		return (-1);
@@ -18,7 +18,7 @@ int get(int a, int b)
 		return (b);
 
 	else
-		return (get(a, b + 1));
+		return (getRoot(a, b + 1));
 
 	return (1);
 }
@@ -35,5 +35,5 @@ int _sqrt_recursion(int n)
 {
 	if (n == 0)
 		return (0);
-	return (get(n, 1));
+	return (getRoot(n, 1));
 }
