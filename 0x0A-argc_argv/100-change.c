@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 		{
 			printf("0\n");
 		}else{
-			for(i = 0; i < sizeof(cents); i++)
+			for(i = 0; i < 5; i++)
 			{
 				result = cent % cents[i];
 				if(result == 0)
