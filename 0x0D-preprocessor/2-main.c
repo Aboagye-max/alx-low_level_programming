@@ -19,6 +19,6 @@ int _putchar(char c)
   */
 int main(void)
 {
-	printf("%S\n", __FILE__);
+	_putchar(__FILE__);
 	return (0);
 }
