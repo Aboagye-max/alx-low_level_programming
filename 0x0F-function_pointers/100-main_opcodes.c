@@ -1,6 +1,6 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <udis86.h>
+#include "function_pointers.h"
 
 /**
   * main - ...
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 
 		if (val < 0)
 		{
-			printf("Error\n");
+			_putchar("Error\n");
 			exit(2);
 		}
 
@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 
 		while (ud_disassemble(&ud_obj))
 		{
-			printf("\t%s\n", ud_insn_hex(&ud_obj));
+			_putchar(ud_insn_hex(&ud_obj));
 		}
 	}
 
